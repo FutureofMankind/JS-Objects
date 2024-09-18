@@ -1,0 +1,2 @@
+import './sortByFeatures';
+import './getCharactersFeatures';
