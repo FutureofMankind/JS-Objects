@@ -1,4 +1,4 @@
-import sortByPropeties from '../js/sortByFeatures';
+import sortByFeatures from '../js/sortByFeatures';
 
 test.each([
   [
@@ -37,6 +37,6 @@ test.each([
     [{ key: 'level', value: 2 }, { key: 'attack', value: 80 }, { key: 'defence', value: 40 }, { key: 'health', value: 10 }, { key: 'name', value: 'мечник' }],
   ],
 ])('testing sortByFeatures function for object: %o and keyList: %s', (oldObj, keyList, newObj) => {
-  const result = sortByPropeties(oldObj, keyList);
+  const result = sortByFeatures(oldObj, keyList);
   expect(result).toEqual(newObj);
 });
